@@ -1,5 +1,5 @@
 require 'pry'
-describe App do
+describe 'App' do
 
   describe 'GET /' do
 
@@ -10,7 +10,7 @@ describe App do
 
     it 'has a link with the text "List a Puppy"' do
       visit '/'
-      expect(page).to have_link("List a Puppy")
+      expect(page).to have_text("List a Puppy")
     end
 
     it 'has a link to list a puppy that links to /new' do
